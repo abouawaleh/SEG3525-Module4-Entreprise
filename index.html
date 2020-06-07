@@ -26,25 +26,34 @@
 
 
 <body>
-
-    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    
+    <!-- Bootstrap Jumbotron from https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp -->
     <!-- Should show the name of your company with an image or logo -->
     <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
     <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
     <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
-    <div class="container-md p-3 my-3 border bg-dark text-white">
+    <div class="jumbotron text-center" style="margin-bottom:0">
         <h1>Welcome to Nice Scissors</h1>
-        <p>We'll take care of your hair!</p>
+        <p>We'll take care of your hair</p> 
     </div>
 
-    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
-    <!-- It can be useful for placement of information -->
-    <div class="row p-3">
-        <div class="col-sm-3 pl-5">Service</div>
-        <div class="col-sm-3">Calendar</div>
-        <div class="col-sm-3">Payment</div>
-        <div class="col-sm-3">Where to find us</div>
-    </div>
+    <!-- Bootstrap Navbar from https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp# -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- When you have messages to tell, remember that center align is not always the best choice -->
     <div class="container-md p-3 my-3 border bg-light text-success">
@@ -107,23 +116,10 @@
         <button type="button" class="btn btn-warning active">Active Primary</button>
         <button type="button" class="btn btn-warning" disabled>Disabled Primary</button>
     </div>
-   
-
-    <!-- A different approach would be to make the whole staff information collapsible -->
-    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
-    <!-- Here a single card is used, but card columns could be used -->
-    <div class="container">
-        <h2>More information</h2>
-        <a href="#mechanics" class="btn btn-primary btn-block" data-toggle="collapse">Meet our mechanics</a>
-        <div id="mechanics" class="collapse">
-            <div class="card bg-warning" style="width:200px">
-                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Erwind</h4>
-                    <p class="card-text">Erwind knows all about bikes.</p>
-                </div>
-            </div>
-        </div>
+    
+    <!-- Bootstrap Jumbotron from https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp -->
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>Footer</p>
     </div>
 
 </body>
