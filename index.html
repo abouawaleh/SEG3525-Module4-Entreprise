@@ -7,6 +7,8 @@
 <!-- salon.jpg taken from https://www.yelp.ca/biz/dalilah-hair-salon-toronto -->
 <!-- men-cut.jpg taken from https://www.menshairstylesnow.com/mens-fade-haircuts/ -->
 <!-- women-cut-inside.jpg taken from https://stayglam.com/beauty/short-haircuts-for-women/ -->
+<!-- john-doe.jpg taken from https://www.pinterest.ca/pin/346777240058194395/ -->
+<!-- jane-doe.jpg taken from http://clipart-library.com/cartoon-images-of-women.html/ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -114,7 +116,40 @@
         </div>
     </div>
 
-
+    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+    <div class="container p-3">
+        <h2>MEET OUR HAIRDRESSERS</h2>
+        <div class="card-columns">
+            <div class="card bg-primary" style="width:200px">
+                <img class="card-img-top" src="images/john-doe.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">The straight hair specialist</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Jules has been cutting hair for 10 years ... </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-primary" style="width:200px">
+                <img class="card-img-top" src="images/jane-doe.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Jane Doe</h4>
+                    <p class="card-text">The curly hair specialist</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Jules has been cutting hair for 15 years ... </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                          
     <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
     <!-- These can be useful for making sure someone reads something before continuing -->
     <div class="container">
