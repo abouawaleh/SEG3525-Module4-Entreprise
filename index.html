@@ -55,43 +55,58 @@
         </ul>
     </nav>
 
-    <!-- When you have messages to tell, remember that center align is not always the best choice -->
-    <div class="container-md p-3 my-3 border bg-light text-success">
-        <h3>Let us tell you about our expertise</h3>
-        <p>We can <mark>cut hair</mark></p>
-        <p class="text-center" >Align wheels</p>
-        <p class="text-uppercase">Write in uppercase</p>
-        <p class="text-center text-uppercase" >centered and uppercase</p>
+    <!-- Bootstrap carousel taken from https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/barbershop.jpg" alt="Los Angeles" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="images/barbershop-inside.jpg" alt="Chicago" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="images/salon.jpg" alt="New York" width="1100" height="500">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
-
-
-    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
-    <!-- Might be (or not) useful to show some information to the user -->
-    <div class="container">
-        <h2>Service description</h2>
-        <p>Here is a list of services offered</p>            
-        <table class="table table-primary table-hover">
-            <thead>
-            <tr>
-                <th>Service</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Haircut</td>
-                <td>Bla bla</td>
-            </tr>
-            <tr>
-                <td>Drying</td>
-                <td>Bla bla</td>
-            </tr>
-            <tr>
-                <td>Coloring</td>
-                <td>Bla bla</td>
-            </tr>
-            </tbody>
-        </table>
+    
+    <div class="container-md p-3 my-3 bg-light">
+        <div class="row">
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-primary">Learn more</button>
+            </div>
+            <div class="col-sm-8">
+                <h2>MEN'S HAIRCUTS</h2>
+                <div class="fakeimg">Fake Image</div>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>WOMEN'S HAIRCUTS</h2>
+                <div class="fakeimg">Fake Image</div>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <br>
+            </div>
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-primary">Learn more</button>
+            </div>
+        </div>
     </div>
 
 
@@ -99,22 +114,14 @@
     <!-- These can be useful for making sure someone reads something before continuing -->
     <div class="container">
         <h2>Alert</h2>
-        <p>We have something important to say</p>
         <div class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Please read! </strong>You must read.
+            <strong>Important update! (March 17) </strong> Due to COVID-19, our services are close until further notice.
         </div>
     </div>
-
-    <!-- You'll certainly need buttons at some point in your site -->
-    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
-    <!-- Remember how we talked about choosing a hue and changing the saturation for active/inactive -->
-    <!-- This idea is already part of the components in Bootstrap -->
+    
     <div class="container">
-        <h2>Button States</h2>
-        <button type="button" class="btn btn-warning">Primary Button</button>
-        <button type="button" class="btn btn-warning active">Active Primary</button>
-        <button type="button" class="btn btn-warning" disabled>Disabled Primary</button>
+        <h2>Please enter your information</h2>
     </div>
     
     <!-- Bootstrap Jumbotron from https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp -->
