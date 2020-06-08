@@ -2,8 +2,11 @@
 <!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
 
 <!-- Images source: -->
-<!-- barbershop.jpg taken from https://www.ties.com/blog/hair-terminology-tell-barber-exactly-want -->
+<!-- barbershop.jpg taken from https://www.barbershop.org/ -->
 <!-- barbershop-inside.jpg taken from https://www.ties.com/blog/hair-terminology-tell-barber-exactly-want -->
+<!-- salon.jpg taken from https://www.yelp.ca/biz/dalilah-hair-salon-toronto -->
+<!-- men-cut.jpg taken from https://www.menshairstylesnow.com/mens-fade-haircuts/ -->
+<!-- women-cut-inside.jpg taken from https://stayglam.com/beauty/short-haircuts-for-women/ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +36,7 @@
     <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
     <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
     <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>Welcome to XCuts Haircuts</h1>
+        <h1>XCuts HAIRCUTS</h1>
     </div>
 
     <!-- Bootstrap Navbar from https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp# -->
@@ -112,7 +115,7 @@
     <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
     <!-- These can be useful for making sure someone reads something before continuing -->
     <div class="container">
-        <h2>Alert</h2>
+        <h2>ALERT</h2>
         <div class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>Important update! (March 17) </strong> Due to COVID-19, our services are close until further notice.
@@ -120,21 +123,48 @@
     </div>
     
     <div class="container-md p-3 my-3">
-        <h2>Please enter your information</h2><form action="/action_page.php">
-        <div class="form-group">
-            <label for="firstname">First Name:</label>
-            <input type="firstname" class="form-control" id="firstname" placeholder="Enter first name" name="firstname">
-        </div>
-        <div class="form-group">
-            <label for="lastname">Last Name:</label>
-            <input type="lastname" class="form-control" id="lastname" placeholder="Enter last name" name="lastname">
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+        <h2>CHOOSE OUR SERVICES</h2>
+        <br>               
+        <h4>SERVICES</h4>
+        <form action="/action_page.php">
+            <div class="form-check">
+                <label class="form-check-label" for="radio1">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>MEN'S HAIRCUT
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="radio2">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">WOMEN'S HAIRCUT
+                </label>
+            </div>
+        </form>   
+        <h4>INFORMATION</h4>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="firstname">FIRST NAME:</label>
+                <input type="firstname" class="form-control" id="firstname" placeholder="Enter first name" name="firstname">
+            </div>
+            <div class="form-group">
+                <label for="lastname">LAST NAME:</label>
+                <input type="lastname" class="form-control" id="lastname" placeholder="Enter last name" name="lastname">
+            </div>
+            <div class="form-group">
+                <label for="email">EMAIL:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form> 
+        <h4>SET THE DATE</h4>
+        <p>What date?</p>
+        <br>
+        <form action="/action_page.php">
+            <div class="form-group row">
+                <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                <div class="col-10">
+                    <input class="form-control" type="datetime-local" value="2020-06-15T12:00:00" id="dateTimeInput">
+                </div>
+            </div>
+        </form>
     </div>
     
     <!-- Bootstrap Jumbotron from https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp -->
